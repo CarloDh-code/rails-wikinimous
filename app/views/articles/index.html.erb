@@ -1,0 +1,11 @@
+<div class='container'>
+  <div class='title'>
+    <h1>Wikinomous</h1>
+  </div>
+<br>
+<ul>
+  <% @articles.each do |article| %>
+    <li><%= link_to article.title, article_path(article) %></li>
+  <% end %>
+</ul>
+</div>
